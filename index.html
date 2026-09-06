@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda Cheia · a recepcionista de WhatsApp do seu petshop | Argos</title>
+<meta name="description" content="Atende no WhatsApp, marca o banho sozinha, confirma um dia antes e chama de volta o pet que passou do ciclo. Para petshop, banho e tosa, barbearia e salão. A partir de R$ 490 por mês.">
+<link rel="canonical" href="https://rodrigoroqque.github.io/agenda-cheia/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#F6F3EE">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Argos">
+<meta property="og:title" content="Agenda cheia, sem ninguém digitando">
+<meta property="og:description" content="A recepcionista de WhatsApp que marca o banho, confirma antes e traz o pet de volta no ciclo dele.">
+<meta property="og:url" content="https://rodrigoroqque.github.io/agenda-cheia/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E110F'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23F2A03D' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23F2A03D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://rodrigoroqque.github.io/agenda-cheia/#argos","name":"Argos","description":"IA e automação para o comércio. São Paulo, Brasil.","url":"https://rodrigoroqque.github.io/agenda-cheia/","telephone":"+5511971039322","areaServed":{"@type":"Country","name":"Brasil"}},
+ {"@type":"Service","@id":"https://rodrigoroqque.github.io/agenda-cheia/#servico","name":"Agenda Cheia","serviceType":"Atendimento e agendamento por WhatsApp para petshop, banho e tosa","description":"Recepcionista de inteligência artificial que atende no WhatsApp, marca o horário sozinha, confirma um dia antes, ocupa o horário vago com a lista de espera e chama de volta o cliente que passou do próprio ciclo de retorno.","provider":{"@id":"https://rodrigoroqque.github.io/agenda-cheia/#argos"},"areaServed":{"@type":"Country","name":"Brasil"},"audience":{"@type":"BusinessAudience","name":"Petshop de banho e tosa, barbearia, salão e clínica de estética"},"offers":[
+  {"@type":"Offer","name":"Agenda","priceCurrency":"BRL","price":"490","priceSpecification":{"@type":"UnitPriceSpecification","price":"490","priceCurrency":"BRL","unitText":"mês"},"availability":"https://schema.org/InStock"},
+  {"@type":"Offer","name":"Agenda Cheia","priceCurrency":"BRL","price":"890","priceSpecification":{"@type":"UnitPriceSpecification","price":"890","priceCurrency":"BRL","unitText":"mês"},"availability":"https://schema.org/InStock"},
+  {"@type":"Offer","name":"Rede","priceCurrency":"BRL","price":"1990","priceSpecification":{"@type":"UnitPriceSpecification","price":"1990","priceCurrency":"BRL","unitText":"mês"},"availability":"https://schema.org/InStock"}]},
+ {"@type":"FAQPage","@id":"https://rodrigoroqque.github.io/agenda-cheia/#faq","mainEntity":[
+  {"@type":"Question","name":"O que é o Agenda Cheia?","acceptedAnswer":{"@type":"Answer","text":"É uma recepcionista de inteligência artificial que atende o WhatsApp do petshop. Ela responde o tutor, mostra os horários livres, marca o banho, confirma um dia antes, remarca quando o tutor não pode e chama de volta o pet que passou do próprio ciclo de banho."}},
+  {"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"Três planos. Agenda: R$ 490 por mês mais R$ 1.990 de setup. Agenda Cheia: R$ 890 por mês mais R$ 3.900, incluindo recall por ciclo, lista de espera e resumo do dono às 7h. Rede: R$ 1.990 por mês mais R$ 7.900, para duas ou mais unidades. Todos com 30 dias de garantia."}},
+  {"@type":"Question","name":"Preciso trocar o meu sistema?","acceptedAnswer":{"@type":"Answer","text":"Não. O Agenda Cheia funciona sozinho, com agenda própria, e convive com o sistema que o petshop já usa. Ele cuida do atendimento e da marcação, que é onde o sistema atual não ajuda."}},
+  {"@type":"Question","name":"Como funciona o recall por ciclo?","acceptedAnswer":{"@type":"Answer","text":"Cada pet tem o próprio intervalo entre banhos, medido no histórico dele, e não uma régua fixa igual para todos. Quando o pet passa do ciclo, sai um convite no WhatsApp do tutor com dois horários prontos para escolher."}},
+  {"@type":"Question","name":"Serve para barbearia ou salão?","acceptedAnswer":{"@type":"Answer","text":"Sim. O motor é o mesmo para qualquer serviço com hora marcada e retorno previsível. Muda o vocabulário e a duração dos serviços. Petshop é o nicho de partida."}}]}
+]}
+</script>
+<style>
+:root{
+  --papel:#F6F3EE; --papel2:#EDE9E1; --tinta:#12130F; --tinta2:#5C6055; --tinta3:#8B9083;
+  --linha:#DBD6CA; --linha2:#C9C3B4;
+  --cor:#F2A03D; --cor-esc:#B4630C; --cor-tinta:#2A1703;
+  --zap:#25D366; --zap-tinta:#04210F;
+  --escuro:#0F110E; --escuro2:#181B17; --escuro-linha:#292E28; --escuro-txt:#F2F3EF; --escuro-txt2:#99A098;
+  --d:'Archivo',Impact,sans-serif; --t:'Inter Tight',system-ui,sans-serif; --m:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 17px/1.55 var(--t);-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.5;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E")}
+a{color:inherit}
+svg{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+h1,h2,h3{margin:0;font-family:var(--d);font-weight:900;letter-spacing:-.022em;line-height:.94;text-transform:uppercase;font-variation-settings:'wdth' 82}
+h1{font-size:clamp(44px,6vw,86px);max-width:14ch}
+h2{font-size:clamp(32px,4.6vw,60px)}
+h3{font-size:19px;letter-spacing:-.01em;text-transform:none;font-variation-settings:'wdth' 96;font-weight:800;line-height:1.2}
+p{margin:0}
+.mono{font-family:var(--m);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+
+.leitura{position:fixed;top:0;left:0;height:2px;background:var(--cor);z-index:70;width:0}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(246,243,238,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .25s}
+.topbar.fix{border-bottom-color:var(--linha)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--d);font-weight:900;font-size:19px;text-transform:uppercase;font-variation-settings:'wdth' 88;letter-spacing:.02em}
+.logo svg{width:26px;height:26px;flex:none}
+.logo em{font-style:normal;font-family:var(--m);font-size:10px;letter-spacing:.16em;color:var(--tinta3);font-weight:500;padding-left:9px;border-left:1px solid var(--linha2);text-transform:none}
+.links{display:flex;gap:24px}
+.links a{text-decoration:none;font-family:var(--m);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--tinta2);padding:6px 0;position:relative;transition:color .2s}
+.links a:hover,.links a.on{color:var(--tinta)}
+.links a.on:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--cor)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--tinta);color:var(--papel);border:0;cursor:pointer;text-decoration:none;font:600 15px/1 var(--t);padding:15px 22px;border-radius:999px;min-height:46px;transition:transform .14s,box-shadow .2s,background .2s,color .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(18,19,15,.22)}
+.btn svg{width:17px;height:17px;flex:none}
+.btn.zap{background:var(--zap);color:var(--zap-tinta)}
+.btn.cor{background:var(--cor);color:var(--cor-tinta)}
+.btn.linha{background:transparent;color:var(--tinta);border:1.5px solid var(--tinta)}
+.btn.linha:hover{background:var(--tinta);color:var(--papel)}
+.btn.sm{padding:11px 18px;min-height:40px;font-size:14px}
+.burger{display:none;background:none;border:0;padding:0;width:40px;height:40px;align-items:center;justify-content:center;cursor:pointer;color:var(--tinta)}
+.burger svg{width:24px;height:24px}
+.gaveta{display:none;border-top:1px solid var(--linha);padding:4px 0 14px}
+.gaveta.open{display:block}
+.gaveta a{display:flex;align-items:center;justify-content:space-between;padding:14px 2px;text-decoration:none;font-weight:600;border-bottom:1px solid var(--linha);min-height:44px}
+.gaveta a:last-child{border:0}
+.gaveta a span{font-family:var(--m);font-size:11px;color:var(--tinta3)}
+
+.heroi{position:relative;padding:clamp(34px,5vw,72px) 0 clamp(38px,4vw,64px);overflow:clip}
+.marca{position:absolute;right:4%;top:4%;font-family:var(--d);font-weight:900;font-size:min(30vw,400px);line-height:.8;color:var(--tinta);opacity:.045;letter-spacing:-.04em;pointer-events:none;user-select:none;font-variation-settings:'wdth' 70}
+.heroi .wrap{position:relative;z-index:1}
+.grade{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(24px,4vw,58px);align-items:center}
+.selo{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--linha2);background:rgba(255,255,255,.6);padding:8px 15px 8px 12px;border-radius:999px;margin-bottom:20px}
+.selo i{width:7px;height:7px;border-radius:50%;background:var(--cor);box-shadow:0 0 0 0 rgba(242,160,61,.55);animation:bat 2.2s infinite}
+@keyframes bat{70%{box-shadow:0 0 0 8px rgba(242,160,61,0)}100%{box-shadow:0 0 0 0 rgba(242,160,61,0)}}
+h1 .cor{color:var(--cor-esc)}
+h1 .risco{position:relative;display:inline-block}
+h1 .risco:after{content:"";position:absolute;left:-.01em;right:-.01em;bottom:.06em;height:.085em;background:var(--cor);z-index:-1}
+.sub{margin:22px 0 28px;font-size:clamp(17px,1.6vw,20px);color:var(--tinta2);max-width:31em}
+.sub b{color:var(--tinta);font-weight:600}
+.acoes{display:flex;gap:12px;flex-wrap:wrap}
+.micro{margin-top:16px;font-size:14.5px;color:var(--tinta2);max-width:34em}
+
+.fone-area{position:relative;display:flex;justify-content:center}
+.fone-area:before{content:"";position:absolute;inset:-8% -14%;background:radial-gradient(60% 50% at 50% 45%,rgba(242,160,61,.18),transparent 70%);pointer-events:none}
+.iphone{position:relative;width:min(348px,100%);aspect-ratio:390/840;background:#0a0c0b;border-radius:52px;padding:11px;box-shadow:0 50px 90px -30px rgba(18,19,15,.55),0 0 0 2px #23272a,0 0 0 3px #0a0c0b,0 0 0 4px rgba(255,255,255,.5)}
+.iphone:before{content:"";position:absolute;left:50%;top:20px;transform:translateX(-50%);width:104px;height:30px;background:#000;border-radius:18px;z-index:3}
+.screen{position:relative;width:100%;height:100%;border-radius:42px;overflow:hidden;background:#0b141a;display:flex;flex-direction:column;font:400 11.6px/1.4 var(--t)}
+.status{height:50px;display:flex;align-items:flex-end;justify-content:space-between;padding:0 26px 5px;font:600 13px var(--t);color:#fff;background:#202c33}
+.wahead{background:#202c33;display:flex;align-items:center;gap:9px;padding:7px 11px 9px;color:#e9edef}
+.wahead .back{color:#00a884;font-size:21px;line-height:1}
+.av{width:35px;height:35px;border-radius:50%;background:var(--escuro);display:flex;align-items:center;justify-content:center;flex:none}
+.av svg{width:20px;height:20px}
+.wahead .who{flex:1;min-width:0}
+.wahead .who b{display:block;font-size:14px;line-height:1.15}
+.wahead .who span{font-size:11.5px;color:#8696a0}
+.wahead .ic{display:flex;gap:15px;color:#aebac1}
+.wahead .ic svg{width:17px;height:17px}
+.chat{flex:1;overflow:hidden;padding:9px 9px 6px;background-color:#0b141a;scrollbar-width:none;
+  background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:22px 22px}
+.chat::-webkit-scrollbar{display:none}
+.dia{margin:0 auto 9px;width:max-content;background:#182229;color:#8696a0;font-size:11px;padding:4px 10px;border-radius:8px}
+.msg{position:relative;background:#202c33;color:#e9edef;border-radius:9px;border-top-left-radius:2px;padding:8px 10px 16px;max-width:88%;white-space:pre-wrap;box-shadow:0 1px 1px rgba(0,0,0,.35);opacity:0;transform:translateY(9px);transition:opacity .26s,transform .26s;margin-bottom:7px}
+.msg.on{opacity:1;transform:none}
+.msg:before{content:"";position:absolute;left:-7px;top:0;border:8px solid transparent;border-top-color:#202c33;border-right-color:#202c33;border-radius:0 0 0 4px}
+.msg b{color:#fff}
+.msg .ok{color:#6ee7a0;font-weight:600}
+.msg .t{position:absolute;right:8px;bottom:4px;font-size:10px;color:#8696a0}
+.msg.me{background:#005c4b;margin-left:auto;border-top-left-radius:9px;border-top-right-radius:2px;max-width:80%}
+.msg.me:before{left:auto;right:-7px;border-top-color:#005c4b;border-right-color:transparent;border-left-color:#005c4b;border-radius:0 0 4px 0}
+.msg.me .t{color:#8fd3c4}
+.msg.me .t:after{content:" ✓✓";color:#53bdeb}
+.digita{display:none;align-items:center;gap:4px;background:#202c33;border-radius:9px;border-top-left-radius:2px;padding:11px 12px;width:max-content;margin-bottom:7px}
+.digita.on{display:flex}
+.digita i{width:6px;height:6px;border-radius:50%;background:#8696a0;animation:pt 1.2s infinite}
+.digita i:nth-child(2){animation-delay:.2s}.digita i:nth-child(3){animation-delay:.4s}
+@keyframes pt{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.compose{display:flex;align-items:center;gap:7px;padding:7px 9px 9px;background:#0b141a}
+.compose .in{flex:1;background:#2a3942;border-radius:20px;min-height:35px;display:flex;align-items:center;padding:0 13px;color:#8696a0;font-size:12.5px;gap:8px;overflow:hidden}
+.compose .in .txt{color:#e9edef;white-space:nowrap;overflow:hidden}
+.compose .env{width:35px;height:35px;border-radius:50%;background:#00a884;display:flex;align-items:center;justify-content:center;flex:none;transition:transform .12s}
+.compose .env.clique{transform:scale(.85)}
+.compose .env svg{width:18px;height:18px;fill:#fff}
+.homebar{height:18px;display:flex;align-items:center;justify-content:center;background:#0b141a}
+.homebar i{width:110px;height:4px;border-radius:4px;background:#e9edef;opacity:.85}
+.caret{display:inline-block;width:1px;height:12px;background:#e9edef;margin-left:1px;vertical-align:-2px;animation:pisca 1s steps(1) infinite}
+@keyframes pisca{50%{opacity:0}}
+
+.hud{border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);margin-top:clamp(28px,4vw,52px)}
+.hud .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.hud div{padding:22px 24px 22px 0;border-right:1px solid var(--linha)}
+.hud div:last-child{border-right:0}
+.hud div:not(:first-child){padding-left:24px}
+.hud b{display:block;font-family:var(--d);font-weight:900;font-size:clamp(24px,2.4vw,34px);letter-spacing:-.02em;font-variation-settings:'wdth' 86;line-height:1}
+.hud span{display:block;margin-top:7px;font-size:13.5px;color:var(--tinta2);line-height:1.35}
+
+section{padding:clamp(52px,6.5vw,96px) 0;position:relative}
+.cab{display:flex;align-items:baseline;gap:16px;margin-bottom:14px;color:var(--tinta3)}
+.cab i{font-family:var(--m);font-size:11.5px;letter-spacing:.14em;font-style:normal;color:var(--cor-esc);font-weight:700}
+.cab .l{flex:1;height:1px;background:var(--linha)}
+.intro{color:var(--tinta2);font-size:clamp(17px,1.5vw,19px);max-width:52ch;margin-top:18px}
+
+.dor{background:var(--papel2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.dor-lista{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linha);margin-top:42px;border:1px solid var(--linha)}
+.dor-lista div{background:var(--papel2);padding:28px 24px}
+.dor-lista q{display:block;font-family:var(--d);font-weight:800;font-size:21px;line-height:1.14;font-variation-settings:'wdth' 92;quotes:none}
+.dor-lista p{margin-top:12px;color:var(--tinta2);font-size:15px}
+
+.blocos{margin-top:46px;border-top:1px solid var(--linha)}
+.bloco{display:grid;grid-template-columns:64px 1fr 1.05fr;gap:clamp(14px,3vw,42px);padding:26px 0;border-bottom:1px solid var(--linha);align-items:start;transition:background .25s}
+.bloco:hover{background:rgba(255,255,255,.5)}
+.bloco .n{font-family:var(--m);font-size:12px;color:var(--tinta3);padding-top:5px;letter-spacing:.1em}
+.bloco p{color:var(--tinta2);font-size:15.5px;margin-top:7px}
+.bloco .ex{font-family:var(--m);font-size:12.5px;line-height:1.75;background:var(--escuro);color:var(--escuro-txt);padding:15px 17px;border-radius:10px;overflow-x:auto}
+.bloco .ex .lb{color:#8696a0}.bloco .ex .ok{color:#6ee7a0}.bloco .ex .al{color:#ffcc80}
+
+.passos{display:grid;grid-template-columns:repeat(4,1fr);margin-top:46px;border:1px solid var(--linha);background:var(--linha);gap:1px}
+.passo{background:var(--papel2);padding:26px 22px 28px;position:relative}
+.passo .n{font-family:var(--d);font-weight:900;font-size:40px;line-height:1;color:var(--linha2);font-variation-settings:'wdth' 80}
+.passo h3{margin:10px 0 8px}
+.passo p{color:var(--tinta2);font-size:15px}
+.passo .q{position:absolute;right:18px;top:22px;font-family:var(--m);font-size:11px;color:var(--cor-esc);letter-spacing:.1em}
+
+.escuro{background:var(--escuro);color:var(--escuro-txt)}
+.escuro .cab{color:var(--escuro-txt2)}
+.escuro .cab i{color:var(--cor)}
+.escuro .cab .l{background:var(--escuro-linha)}
+.escuro .intro{color:var(--escuro-txt2)}
+.planos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px;align-items:start}
+.plano{border:1px solid var(--escuro-linha);border-radius:16px;padding:26px 24px 24px;display:flex;flex-direction:column;background:var(--escuro2);position:relative;transition:transform .2s,border-color .2s}
+.plano:hover{transform:translateY(-4px);border-color:#3a4440}
+.plano.alvo{border-color:var(--cor);background:linear-gradient(180deg,rgba(242,160,61,.1),transparent 46%),var(--escuro2);transform:scale(1.03)}
+.plano.alvo:hover{transform:scale(1.03) translateY(-4px)}
+.fita{position:absolute;top:-11px;left:24px;background:var(--cor);color:var(--cor-tinta);font-family:var(--m);font-size:10.5px;font-weight:700;letter-spacing:.12em;padding:5px 10px;border-radius:5px;text-transform:uppercase}
+.plano .nm{font-family:var(--d);font-weight:900;font-size:23px;text-transform:uppercase;font-variation-settings:'wdth' 88}
+.plano .pra{color:var(--escuro-txt2);font-size:14.5px;margin:6px 0 18px;min-height:42px}
+.preco{font-family:var(--d);font-weight:900;font-size:46px;line-height:1;letter-spacing:-.03em;font-variation-settings:'wdth' 84}
+.preco small{font-family:var(--t);font-size:15px;font-weight:500;color:var(--escuro-txt2)}
+.setup{font-family:var(--m);font-size:11.5px;color:var(--escuro-txt2);margin-top:9px;letter-spacing:.06em}
+.plano ul{list-style:none;padding:0;margin:20px 0 0;flex:1;display:flex;flex-direction:column;gap:11px}
+.plano li{display:flex;gap:10px;font-size:15px;line-height:1.42;color:#cfd6cd}
+.plano li svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--cor)}
+.plano li b{color:var(--escuro-txt)}
+.plano .btn{margin-top:22px;width:100%}
+.plano .btn.linha{color:var(--escuro-txt);border-color:#3d4741}
+.plano .btn.linha:hover{background:var(--escuro-txt);color:var(--escuro)}
+.econ{margin-top:11px;text-align:center;font-family:var(--m);font-size:11px;color:var(--cor);letter-spacing:.05em}
+.rodape-planos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.rodape-planos div{border:1px solid var(--escuro-linha);border-radius:12px;padding:16px 18px;font-size:14.5px;color:var(--escuro-txt2)}
+.rodape-planos b{color:var(--escuro-txt)}
+
+.faq{margin-top:38px;border-top:1px solid var(--linha)}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{cursor:pointer;list-style:none;padding:22px 44px 22px 0;font-family:var(--d);font-weight:800;font-size:19px;font-variation-settings:'wdth' 94;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"";position:absolute;right:8px;top:50%;width:11px;height:11px;border-right:2px solid var(--tinta3);border-bottom:2px solid var(--tinta3);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.faq details[open] summary:after{transform:translateY(-30%) rotate(-135deg)}
+.faq p{padding:0 0 22px;color:var(--tinta2);max-width:72ch}
+
+.final{text-align:center;background:var(--papel2);border-top:1px solid var(--linha)}
+.final h2{max-width:16ch;margin:0 auto}
+.final .intro{margin:20px auto 30px}
+footer{border-top:1px solid var(--linha);padding:32px 0 44px;font-size:14px;color:var(--tinta2)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer .mono{color:var(--tinta3)}
+
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:65;width:58px;height:58px;border-radius:50%;background:var(--zap);color:var(--zap-tinta);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(37,211,102,.42);opacity:0;pointer-events:none;transform:translateY(12px) scale(.9);transition:opacity .25s,transform .25s}
+.fab.on{opacity:1;pointer-events:auto;transform:none}
+.fab svg{width:29px;height:29px}
+#topo{position:fixed;left:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:65;width:44px;height:44px;border-radius:50%;border:1px solid var(--linha2);background:var(--papel);color:var(--tinta);cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s;box-shadow:0 8px 20px rgba(18,19,15,.12)}
+#topo.on{opacity:1;pointer-events:auto}
+#topo svg{width:17px;height:17px}
+.rev{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+.rev.vis{opacity:1;transform:none}
+
+@media(max-width:980px){
+  .grade{grid-template-columns:1fr;gap:36px}
+  .marca{font-size:44vw;top:auto;bottom:2%;right:-8%}
+  .hud .wrap{grid-template-columns:1fr 1fr}
+  .hud div{border-bottom:1px solid var(--linha);padding:18px 20px 18px 0}
+  .hud div:nth-child(2n){border-right:0;padding-left:20px}
+  .hud div:nth-child(n+3){border-bottom:0}
+  .dor-lista,.passos,.planos,.rodape-planos{grid-template-columns:1fr}
+  .plano.alvo{transform:none;order:-1}
+  .bloco{grid-template-columns:34px 1fr;gap:10px 16px}
+  .bloco .ex{grid-column:1/-1;margin-top:6px}
+}
+@media(max-width:760px){
+  body{font-size:16px}
+  .links,nav .btn{display:none}
+  .burger{display:flex}
+  nav{padding:9px 0}
+  .acoes .btn{width:100%}
+  .iphone{aspect-ratio:390/880}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rev{opacity:1;transform:none;transition:none}.selo i,.fab{animation:none}}
+</style>
+</head>
+<body>
+<div class="leitura" id="leitura"></div>
+
+<div class="topbar" id="topbar">
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="16" cy="16" r="5.2" fill="#F2A03D"/><circle cx="16" cy="16" r="9.4" fill="none" stroke="currentColor" stroke-width="1" opacity=".45"/></svg>
+        Argos<em>Agenda Cheia</em>
+      </a>
+      <div class="links">
+        <a href="#dor">O problema</a>
+        <a href="#faz">O que ela faz</a>
+        <a href="#como">Como funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">Perguntas</a>
+      </div>
+      <a class="btn zap sm" href="https://wa.me/5511971039322?text=Quero%20ver%20o%20Agenda%20Cheia%20no%20meu%20petshop" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Ver no meu petshop
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="gaveta">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+    </nav>
+    <div class="gaveta" id="gaveta">
+      <a href="#dor">O problema <span>01</span></a>
+      <a href="#faz">O que ela faz <span>02</span></a>
+      <a href="#como">Como funciona <span>03</span></a>
+      <a href="#planos">Planos <span>04</span></a>
+      <a href="#faq">Perguntas <span>05</span></a>
+    </div>
+  </div>
+</div>
+
+<header class="heroi" id="inicio">
+  <div class="marca" aria-hidden="true">08:00</div>
+  <div class="wrap">
+    <div class="grade">
+      <div>
+        <span class="selo"><i></i><span class="mono">Petshop, banho e tosa</span></span>
+        <h1>Agenda cheia,<br>sem <span class="risco">ninguém digitando</span>.</h1>
+        <p class="sub">Ela atende o WhatsApp, mostra os horários, marca o banho e confirma um dia antes. <b>E chama de volta o pet que passou do ciclo.</b> Você fica com a mão no serviço, não no celular.</p>
+        <div class="acoes">
+          <a class="btn zap" id="cta-heroi" href="https://wa.me/5511971039322?text=Quero%20ver%20o%20Agenda%20Cheia%20no%20meu%20petshop" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Quero ver no meu petshop
+          </a>
+          <a class="btn linha" href="#planos">Ver os planos</a>
+        </div>
+        <p class="micro">Dez minutos numa chamada. Você vê ela marcando de verdade num petshop de exemplo. A partir de R$ 490 por mês.</p>
+      </div>
+
+      <div class="fone-area">
+        <div class="iphone">
+          <div class="screen">
+            <div class="status"><span>08:04</span><span>▪▪▪ 5G ▮▮▮</span></div>
+            <div class="wahead">
+              <span class="back">‹</span>
+              <div class="av"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="#F2A03D" stroke-width="2.4"/><circle cx="16" cy="16" r="5" fill="#F2A03D"/></svg></div>
+              <div class="who"><b>Pet Exemplo Banho e Tosa</b><span id="estado">online</span></div>
+              <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg></div>
+            </div>
+            <div class="chat" id="chat">
+              <div class="dia">Hoje</div>
+              <div class="msg me" id="m1">oi, consigo dar banho na Amora sábado?<span class="t">08:04</span></div>
+              <div class="msg" id="m2">Oi, Sandra! Para a Amora (banho porte pequeno, 60 min) tenho no sábado:
+1. 09:00 com a Ana
+2. 11:30 com o Bruno
+3. 14:00 com a Ana<span class="t">08:04</span></div>
+              <div class="msg me" id="m3">a 1<span class="t">08:05</span></div>
+              <div class="msg" id="m4"><span class="ok">Marcado!</span> Sábado 13/09 às 09:00, banho porte pequeno, com a Ana. R$ 60.
+Mando a confirmação sexta. Se precisar mudar, é só me falar.<span class="t">08:05</span></div>
+              <div class="msg" id="m5">Ah, e a Amora costuma vir a cada 21 dias. Se quiser, já deixo o próximo reservado para 04/10.<span class="t">08:05</span></div>
+              <div class="digita" id="digita"><i></i><i></i><i></i></div>
+            </div>
+            <div class="compose">
+              <div class="in">☺ <span id="ph">Mensagem</span><span class="txt" id="txt"></span></div>
+              <div class="env" id="env" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3m5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.41 2.72 6.23 6 6.72V22h2v-3.28c3.28-.49 6-3.31 6-6.72z"/></svg></div>
+            </div>
+            <div class="homebar"><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hud">
+    <div class="wrap">
+      <div><b>24h</b><span>atende e marca sozinha, inclusive fora do horário</span></div>
+      <div><b>Metade</b><span>é o quanto a falta cai com confirmação um dia antes</span></div>
+      <div><b>Ciclo do pet</b><span>chama de volta pelo intervalo de cada um, não por régua fixa</span></div>
+      <div><b>Convive</b><span>com o sistema que você já usa, sem trocar nada</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="dor" id="dor">
+  <div class="wrap">
+    <div class="cab rev"><i>01</i><span class="mono">O problema</span><span class="l"></span></div>
+    <h2 class="rev">Quem atende o WhatsApp<br>está com a mão no banho.</h2>
+    <p class="intro rev">No petshop pequeno não existe recepcionista. Quem responde é quem está tosando. É por isso que a agenda tem buraco no meio da tarde e cliente que some sem ninguém notar.</p>
+    <div class="dor-lista rev">
+      <div><q>"Vi a mensagem 3 horas depois."</q><p>O tutor perguntou às 9h, você respondeu às 12h. Ele já marcou no concorrente que respondeu na hora.</p></div>
+      <div><q>"Faltou e não avisou."</q><p>Horário parado, profissional parado, e ninguém para encaixar. Confirmação um dia antes corta isso pela metade.</p></div>
+      <div><q>"Some depois de dois banhos."</q><p>O pet vinha todo mês e parou. Sem alguém olhando pet por pet, isso só aparece quando o faturamento cai.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faz">
+  <div class="wrap">
+    <div class="cab rev"><i>02</i><span class="mono">O que ela faz</span><span class="l"></span></div>
+    <h2 class="rev">Seis tarefas que hoje<br>sobram para você.</h2>
+    <div class="blocos">
+      <article class="bloco rev">
+        <span class="n">01</span>
+        <div><h3>Marca sozinha</h3><p>O tutor escreve como fala. Ela entende o pet, o serviço e o porte, mostra os horários livres e marca. Sem link, sem aplicativo, sem você digitar.</p></div>
+        <div class="ex"><span class="lb">Tutor:</span> consigo banho na Amora sábado?<br><span class="lb">Ela:</span> 09:00, 11:30 ou 14:00<br><span class="ok">Marcado sábado 09:00</span></div>
+      </article>
+      <article class="bloco rev">
+        <span class="n">02</span>
+        <div><h3>Confirma antes</h3><p>Um dia antes ela pede a confirmação com resposta de um toque. Quem não confirma vira alerta para você, com o telefone na mão.</p></div>
+        <div class="ex"><span class="lb">Sexta 18:00:</span> Confirma o banho da Amora amanhã às 09:00?<br><span class="ok">✓ Confirmado</span></div>
+      </article>
+      <article class="bloco rev">
+        <span class="n">03</span>
+        <div><h3>Remarca sem atrito</h3><p>Se o tutor não puder, ela já oferece outros horários na hora, em vez de simplesmente cancelar e perder a receita.</p></div>
+        <div class="ex"><span class="lb">Tutor:</span> não vou conseguir<br><span class="lb">Ela:</span> sem problema, tenho terça 10:00 ou quarta 15:00</div>
+      </article>
+      <article class="bloco rev">
+        <span class="n">04</span>
+        <div><h3>Chama pelo ciclo do pet</h3><p>Cada pet tem o próprio intervalo, medido no histórico dele. Quando passa da hora, sai um convite com dois horários prontos.</p></div>
+        <div class="ex"><span class="lb">Recall:</span> Thor está há 26 dias sem vir<br>costume: a cada <span class="al">21 dias</span><br>convite com 2 horários enviado</div>
+      </article>
+      <article class="bloco rev">
+        <span class="n">05</span>
+        <div><h3>Ocupa o buraco</h3><p>Cancelou hoje? Ela oferece o horário para quem está na lista de espera ou para quem já passou do ciclo, no mesmo dia.</p></div>
+        <div class="ex"><span class="lb">10:00 vagou</span><br>oferecido para 3 da lista<br><span class="ok">preenchido em 12 min</span></div>
+      </article>
+      <article class="bloco rev">
+        <span class="n">06</span>
+        <div><h3>Resumo das 7h para você</h3><p>Agenda do dia, quem confirmou, os buracos, o faturamento previsto, as faltas de ontem e os pets fora do ciclo. Com as três ações do dia.</p></div>
+        <div class="ex"><span class="lb">Hoje:</span> 4 atendimentos · R$ 325<br><span class="lb">Faltas ontem:</span> <span class="al">1 · R$ 85</span><br><span class="lb">Fora do ciclo:</span> <span class="al">4 pets</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="como" style="background:var(--papel2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
+  <div class="wrap">
+    <div class="cab rev"><i>03</i><span class="mono">Como funciona</span><span class="l"></span></div>
+    <h2 class="rev">Ela entra sem<br>mudar a sua rotina.</h2>
+    <p class="intro rev">Você não troca de sistema, não treina equipe e não muda o jeito de trabalhar. Só para de digitar horário.</p>
+    <div class="passos rev">
+      <div class="passo"><span class="q">10 min</span><span class="n">01</span><h3>Conversa</h3><p>Você me passa os serviços, a duração de cada um, quem atende e o horário de funcionamento.</p></div>
+      <div class="passo"><span class="q">até 15 dias</span><span class="n">02</span><h3>Número e agenda</h3><p>Monto o número oficial do seu petshop no WhatsApp e a agenda com as suas regras.</p></div>
+      <div class="passo"><span class="q">1 semana</span><span class="n">03</span><h3>Você acompanha</h3><p>Na primeira semana toda marcação passa por você antes de valer. Só solto quando você confiar.</p></div>
+      <div class="passo"><span class="q">todo dia</span><span class="n">04</span><h3>Ela atende</h3><p>Marca, confirma, remarca e chama de volta. O que fugir do combinado ela passa para você.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="escuro" id="planos">
+  <div class="wrap">
+    <div class="cab rev"><i>04</i><span class="mono">Planos</span><span class="l"></span></div>
+    <h2 class="rev">Preço fechado.<br>Garantia de 30 dias.</h2>
+    <p class="intro rev">Um banho médio fica entre R$ 60 e R$ 120. Recuperar dois pets por semana que sumiram já paga o plano. Cortar a falta pela metade paga de novo.</p>
+    <div class="planos rev">
+      <div class="plano">
+        <div class="nm">Agenda</div>
+        <p class="pra">Para o petshop de um profissional</p>
+        <div class="preco">R$ 490<small>/mês</small></div>
+        <div class="setup">Setup R$ 1.990 · até 15 dias</div>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Atende e <b>marca sozinha</b> no WhatsApp, 24h</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Confirmação um dia antes e lembrete no dia</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Cadastro de tutor e pet com histórico</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Número próprio na API oficial do WhatsApp</span></li>
+        </ul>
+        <a class="btn linha" href="https://wa.me/5511971039322?text=Quero%20o%20plano%20Agenda" target="_blank" rel="noopener">Começar pelo Agenda</a>
+      </div>
+      <div class="plano alvo">
+        <span class="fita">Mais escolhido</span>
+        <div class="nm">Agenda Cheia</div>
+        <p class="pra">Para quem quer a agenda cheia, não só organizada</p>
+        <div class="preco">R$ 890<small>/mês</small></div>
+        <div class="setup">Setup R$ 3.900 · até 15 dias</div>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Tudo do Agenda</b></span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Recall pelo ciclo do pet</b>, com dois horários prontos no convite</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Lista de espera</b> que ocupa o horário vago no mesmo dia</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Resumo das 7h</b> com agenda, buracos, faltas e ações do dia</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Painel web da agenda</span></li>
+        </ul>
+        <a class="btn cor" href="https://wa.me/5511971039322?text=Quero%20o%20plano%20Agenda%20Cheia" target="_blank" rel="noopener">Quero o Agenda Cheia</a>
+        <div class="econ">Dois pets recuperados por semana já pagam</div>
+      </div>
+      <div class="plano">
+        <div class="nm">Rede</div>
+        <p class="pra">Para duas ou mais unidades</p>
+        <div class="preco">R$ 1.990<small>/mês</small></div>
+        <div class="setup">Setup R$ 7.900 · até 30 dias</div>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Tudo do Agenda Cheia</b>, em todas as unidades</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Painel comparativo entre unidades</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Agenda por profissional, com produtividade</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span>Reunião mensal de resultado</span></li>
+        </ul>
+        <a class="btn linha" href="https://wa.me/5511971039322?text=Quero%20o%20plano%20Rede" target="_blank" rel="noopener">Quero o Rede</a>
+      </div>
+    </div>
+    <div class="rodape-planos rev">
+      <div><b>Convive com o seu sistema.</b> Não precisa trocar nada. Ela cuida do atendimento e da marcação.</div>
+      <div><b>Primeiros 3 petshops:</b> 60% de desconto no setup, em troca de um caso publicado com o seu depoimento.</div>
+      <div><b>Serve outros negócios</b> com hora marcada: barbearia, salão, estética e oficina. O motor é o mesmo.</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="cab rev"><i>05</i><span class="mono">Perguntas</span><span class="l"></span></div>
+    <h2 class="rev">Sem letra miúda.</h2>
+    <div class="faq rev">
+      <details><summary>Preciso trocar o meu sistema?</summary><p>Não. O Agenda Cheia tem agenda própria e convive com o sistema que você já usa. Ele cuida do atendimento e da marcação, que é justamente onde o sistema atual não ajuda.</p></details>
+      <details><summary>E se ela não entender o cliente?</summary><p>Quando foge do combinado, ela passa a conversa para você, com o histórico do tutor e do pet na tela. Nunca inventa resposta.</p></details>
+      <details><summary>O cliente vai perceber que é robô?</summary><p>Ela se apresenta como o atendimento do seu petshop, escreve em português normal e não finge ser gente. Na prática o tutor se importa com a resposta rápida, não com quem digitou.</p></details>
+      <details><summary>Como funciona o recall por ciclo?</summary><p>Cada pet tem o próprio intervalo entre banhos, medido no histórico dele, não uma régua igual para todos. Quando passa do ciclo, sai um convite com dois horários prontos para o tutor escolher.</p></details>
+      <details><summary>Serve para barbearia ou salão?</summary><p>Serve. O motor é o mesmo para qualquer serviço com hora marcada e retorno previsível. Muda o vocabulário e a duração. Petshop é só por onde começamos.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>São 30 dias de garantia. Você cancela sem multa e leva a base de tutores e pets em arquivo.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="rev">Quer ver ela marcando?</h2>
+    <p class="intro rev">Dez minutos numa chamada. Você manda uma mensagem como se fosse um tutor e vê a agenda encher.</p>
+    <a class="btn zap rev" href="https://wa.me/5511971039322?text=Quero%20ver%20o%20Agenda%20Cheia%20no%20meu%20petshop" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Falar com o Rodrigo
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Argos</b> · IA e automação para o comércio · São Paulo, SP</span>
+    <span class="mono">Agenda Cheia é um produto Argos</span>
+    <a href="https://rodrigoroqque.github.io/cockpit-do-dono/">Conheça o Cockpit do Dono ↗</a>
+  </div>
+  <div class="wrap" style="margin-top:14px;font-size:13px;color:var(--tinta3)">Os nomes e horários da demonstração são de um petshop fictício, criado para exemplo.</div>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/5511971039322?text=Quero%20ver%20o%20Agenda%20Cheia%20no%20meu%20petshop" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+<button id="topo" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4 4 12h5v8h6v-8h5z"/></svg></button>
+
+<script>
+(function(){
+  var d=document,topbar=d.getElementById('topbar'),fab=d.getElementById('fab'),topo=d.getElementById('topo'),
+      burger=d.getElementById('burger'),gaveta=d.getElementById('gaveta'),leitura=d.getElementById('leitura'),
+      heroCta=d.getElementById('cta-heroi');
+  function scroll(){var y=window.scrollY||d.documentElement.scrollTop,h=d.documentElement.scrollHeight-window.innerHeight;
+    leitura.style.width=(h>0?(y/h*100):0)+'%';topbar.classList.toggle('fix',y>8);topo.classList.toggle('on',y>700);}
+  window.addEventListener('scroll',scroll,{passive:true});scroll();
+  topo.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  if(heroCta&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(e){fab.classList.toggle('on',!e[0].isIntersecting&&e[0].boundingClientRect.top<0);},{threshold:0}).observe(heroCta);
+  }else{fab.classList.add('on');}
+  var ABRE='<svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>',
+      FECHA='<svg viewBox="0 0 24 24"><path fill="currentColor" d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7l1.4-1.4L10.6 10.6l6.3-6.3z"/></svg>';
+  burger.addEventListener('click',function(){var o=gaveta.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.innerHTML=o?FECHA:ABRE;});
+  gaveta.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){gaveta.classList.remove('open');burger.innerHTML=ABRE;});});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('vis');},i*70);io.unobserve(e.target);}});},
+      {rootMargin:'0px 0px -12% 0px',threshold:.08});
+    d.querySelectorAll('.rev').forEach(function(el){io.observe(el);});
+  }else{d.querySelectorAll('.rev').forEach(function(el){el.classList.add('vis');});}
+  var links=[].slice.call(d.querySelectorAll('.links a')),
+      secs=links.map(function(a){return d.querySelector(a.getAttribute('href'));}).filter(Boolean);
+  secs.forEach(function(s){if('IntersectionObserver' in window)
+    new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)
+      links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});});},
+      {rootMargin:'-45% 0px -50% 0px'}).observe(s);});
+})();
+
+(function(){
+  var chat=document.getElementById('chat'),env=document.getElementById('env'),txt=document.getElementById('txt'),
+      ph=document.getElementById('ph'),dig=document.getElementById('digita'),estado=document.getElementById('estado'),
+      msgs=['m1','m2','m3','m4','m5'].map(function(i){return document.getElementById(i);});
+  if(!chat||!msgs[0]||!env)return;
+  var ico=env.querySelector('svg'),
+      MIC='<path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3m5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.41 2.72 6.23 6 6.72V22h2v-3.28c3.28-.49 6-3.31 6-6.72z"/>',
+      AVIAO='<path d="M1.1 21.8 23 12 1.1 2.2l-.01 7.63L16.7 12 1.09 14.17z"/>';
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    msgs.forEach(function(m){m.classList.add('on');});return;}
+  chat.style.overflowY='auto';
+  function esperar(ms){return new Promise(function(r){setTimeout(r,ms);});}
+  function fim(){return chat.scrollHeight-chat.clientHeight;}
+  function typing(on){dig.classList.toggle('on',on);if(estado)estado.textContent=on?'digitando…':'online';chat.scrollTop=fim();}
+  async function digitar(t){
+    ph.style.display='none';ico.innerHTML=AVIAO;
+    for(var i=1;i<=t.length;i++){txt.innerHTML=t.slice(0,i)+'<span class="caret"></span>';await esperar(40);}
+    txt.textContent=t;await esperar(280);
+    env.classList.add('clique');await esperar(130);env.classList.remove('clique');
+    txt.textContent='';ph.style.display='';ico.innerHTML=MIC;
+  }
+  async function mostra(m){m.classList.add('on');chat.scrollTop=fim();}
+  async function ciclo(){
+    msgs.forEach(function(m){m.classList.remove('on');});chat.scrollTop=0;
+    await esperar(700);
+    await digitar('oi, consigo dar banho na Amora sábado?');
+    mostra(msgs[0]);await esperar(500);
+    typing(true);await esperar(1500);typing(false);mostra(msgs[1]);
+    await esperar(2200);
+    await digitar('a 1');
+    mostra(msgs[2]);await esperar(450);
+    typing(true);await esperar(1400);typing(false);mostra(msgs[3]);
+    await esperar(1500);
+    typing(true);await esperar(1200);typing(false);mostra(msgs[4]);
+    await esperar(8000);ciclo();
+  }
+  var comecou=false;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){if(e[0].isIntersecting&&!comecou){comecou=true;ciclo();}},{threshold:.3}).observe(chat);
+  }else{ciclo();}
+})();
+</script>
+</body>
+</html>
