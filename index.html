@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
+ {"@type":"Person","@id":"https://rodrigoroqque.github.io/agenda-cheia/#rodrigo","name":"Rodrigo Roque","jobTitle":"Gerente de CRM e Loyalty","worksFor":{"@id":"https://rodrigoroqque.github.io/agenda-cheia/#argos"},"description":"Trabalha com CRM, fidelização e relacionamento com cliente desde 2014. Passou onze anos em um atacado de moda no Brás, onde coordenou o programa de fidelidade que elevou o valor do cliente em 30% e a retenção em 25%. Hoje é gerente de CRM em um distribuidor nacional de suplementos, onde desenhou e opera um CRM e um bot de WhatsApp usados diariamente por mais de 190 pessoas.","knowsAbout":["CRM","Programa de fidelidade","Retenção de clientes","Recall por ciclo","Automação de atendimento","WhatsApp Business API"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"ESPM"},{"@type":"CollegeOrUniversity","name":"Universidade Anhembi Morumbi"},{"@type":"CollegeOrUniversity","name":"Universidade Cruzeiro do Sul"}],"address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"}},
  {"@type":"Organization","@id":"https://rodrigoroqque.github.io/agenda-cheia/#argos","name":"Argos","description":"IA e automação para o comércio. São Paulo, Brasil.","url":"https://rodrigoroqque.github.io/agenda-cheia/","telephone":"+5511971039322","areaServed":{"@type":"Country","name":"Brasil"}},
  {"@type":"Service","@id":"https://rodrigoroqque.github.io/agenda-cheia/#servico","name":"Agenda Cheia","serviceType":"Atendimento e agendamento por WhatsApp para petshop, banho e tosa","description":"Recepcionista de inteligência artificial que atende no WhatsApp, marca o horário sozinha, confirma um dia antes, ocupa o horário vago com a lista de espera e chama de volta o cliente que passou do próprio ciclo de retorno.","provider":{"@id":"https://rodrigoroqque.github.io/agenda-cheia/#argos"},"areaServed":{"@type":"Country","name":"Brasil"},"audience":{"@type":"BusinessAudience","name":"Petshop de banho e tosa, barbearia, salão e clínica de estética"},"offers":[
   {"@type":"Offer","name":"Agenda","priceCurrency":"BRL","price":"490","priceSpecification":{"@type":"UnitPriceSpecification","price":"490","priceCurrency":"BRL","unitText":"mês"},"availability":"https://schema.org/InStock"},
@@ -30,6 +31,7 @@
   {"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"Três planos. Agenda: R$ 490 por mês mais R$ 1.990 de setup. Agenda Cheia: R$ 890 por mês mais R$ 3.900, incluindo recall por ciclo, lista de espera e resumo do dono às 7h. Rede: R$ 1.990 por mês mais R$ 7.900, para duas ou mais unidades. Todos com 30 dias de garantia."}},
   {"@type":"Question","name":"Preciso trocar o meu sistema?","acceptedAnswer":{"@type":"Answer","text":"Não. O Agenda Cheia funciona sozinho, com agenda própria, e convive com o sistema que o petshop já usa. Ele cuida do atendimento e da marcação, que é onde o sistema atual não ajuda."}},
   {"@type":"Question","name":"Como funciona o recall por ciclo?","acceptedAnswer":{"@type":"Answer","text":"Cada pet tem o próprio intervalo entre banhos, medido no histórico dele, e não uma régua fixa igual para todos. Quando o pet passa do ciclo, sai um convite no WhatsApp do tutor com dois horários prontos para escolher."}},
+  {"@type":"Question","name":"Quem faz o Agenda Cheia?","acceptedAnswer":{"@type":"Answer","text":"Rodrigo Roque, de São Paulo. Trabalha com CRM, fidelização e relacionamento com cliente desde 2014. Passou onze anos em um atacado de moda no Brás que atende lojista, onde coordenou o programa de fidelidade que elevou o valor do cliente em 30% e a retenção em 25%. Hoje é gerente de CRM em um distribuidor nacional de suplementos, onde desenhou e opera um CRM e um bot de WhatsApp usados diariamente por mais de 190 pessoas. É tecnólogo em Gestão Comercial, especialista em Comunicação e Marketing e cursa pós-graduação em Marketing de Relacionamento e CRM na ESPM."}},
   {"@type":"Question","name":"Serve para barbearia ou salão?","acceptedAnswer":{"@type":"Answer","text":"Sim. O motor é o mesmo para qualquer serviço com hora marcada e retorno previsível. Muda o vocabulário e a duração dos serviços. Petshop é o nicho de partida."}}]}
 ]}
 </script>
@@ -253,6 +255,16 @@ footer .mono{color:var(--tinta3)}
   .iphone{aspect-ratio:390/880}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rev{opacity:1;transform:none;transition:none}.selo i,.fab{animation:none}}
+
+.quem{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,70px);align-items:center;margin-top:40px}
+.credencial{border-left:3px solid var(--cor);padding-left:22px;margin:26px 0}
+.credencial b{font-family:var(--d);font-weight:900;font-size:44px;letter-spacing:-.02em;font-variation-settings:'wdth' 86;line-height:1;display:block}
+.credencial span{color:var(--tinta2);font-size:15.5px}
+.lista-check{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:13px}
+.lista-check li{display:flex;gap:11px;font-size:16px;color:var(--tinta2)}
+.lista-check svg{width:17px;height:17px;flex:none;margin-top:4px;color:var(--cor-esc)}
+.lista-check b{color:var(--tinta)}
+@media(max-width:860px){.quem{grid-template-columns:1fr}.credencial b{font-size:38px}}
 </style>
 </head>
 <body>
@@ -270,6 +282,7 @@ footer .mono{color:var(--tinta3)}
         <a href="#faz">O que ela faz</a>
         <a href="#como">Como funciona</a>
         <a href="#planos">Planos</a>
+        <a href="#quem">Quem faz</a>
         <a href="#faq">Perguntas</a>
       </div>
       <a class="btn zap sm" href="https://wa.me/5511971039322?text=Quero%20ver%20o%20Agenda%20Cheia%20no%20meu%20petshop" target="_blank" rel="noopener">
@@ -285,7 +298,8 @@ footer .mono{color:var(--tinta3)}
       <a href="#faz">O que ela faz <span>02</span></a>
       <a href="#como">Como funciona <span>03</span></a>
       <a href="#planos">Planos <span>04</span></a>
-      <a href="#faq">Perguntas <span>05</span></a>
+      <a href="#quem">Quem faz <span>05</span></a>
+      <a href="#faq">Perguntas <span>06</span></a>
     </div>
   </div>
 </div>
@@ -476,9 +490,37 @@ Mando a confirmação sexta. Se precisar mudar, é só me falar.<span class="t">
   </div>
 </section>
 
+<section id="quem">
+  <div class="wrap">
+    <div class="cab rev"><i>05</i><span class="mono">Quem faz</span><span class="l"></span></div>
+    <div class="quem">
+      <div class="rev">
+        <h2>Fazer o cliente voltar<br>é o meu ofício.</h2>
+        <div class="credencial">
+          <b>+25%</b>
+          <span>de retenção e 30% a mais no valor do cliente, no programa de fidelidade que reformulei em um atacado de moda no Brás, atendendo lojista.</span>
+        </div>
+        <div class="credencial">
+          <b>190+</b>
+          <span>pessoas usam todo dia o CRM e o bot de WhatsApp que desenhei e opero para um distribuidor nacional de suplementos.</span>
+        </div>
+        <p class="intro" style="margin-top:0">Sou Rodrigo Roque. Passei onze anos cuidando de programa de fidelidade e atendimento, que é o trabalho de fazer quem já comprou voltar. O Agenda Cheia é isso aplicado a quem vive de hora marcada: a agenda não fura por falta que ninguém avisou, e o tutor que sumiu recebe convite na hora certa do ciclo do pet. Sou tecnólogo em Gestão Comercial, especialista em Comunicação e Marketing e curso pós em Marketing de Relacionamento e CRM na ESPM.</p>
+      </div>
+      <div class="rev">
+        <ul class="lista-check">
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Ela nunca inventa resposta.</b> Quando foge do combinado, passa a conversa para você com o histórico do tutor e do pet.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Convive com o seu sistema.</b> Não troco nada do que o petshop já usa. Ela cuida do atendimento e da marcação.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Seus dados, separados.</b> Cada petshop em ambiente próprio, apagado em até 15 dias se você sair.</span></li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8 14 4 10l1.4-1.4L8 11.2l6.6-6.6L16 6z"/></svg><span><b>Falo com o dono, não com o TI.</b> Se a agenda errar, você me chama no WhatsApp e eu resolvo.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="faq">
   <div class="wrap">
-    <div class="cab rev"><i>05</i><span class="mono">Perguntas</span><span class="l"></span></div>
+    <div class="cab rev"><i>06</i><span class="mono">Perguntas</span><span class="l"></span></div>
     <h2 class="rev">Sem letra miúda.</h2>
     <div class="faq rev">
       <details><summary>Preciso trocar o meu sistema?</summary><p>Não. O Agenda Cheia tem agenda própria e convive com o sistema que você já usa. Ele cuida do atendimento e da marcação, que é justamente onde o sistema atual não ajuda.</p></details>
@@ -486,6 +528,7 @@ Mando a confirmação sexta. Se precisar mudar, é só me falar.<span class="t">
       <details><summary>O cliente vai perceber que é robô?</summary><p>Ela se apresenta como o atendimento do seu petshop, escreve em português normal e não finge ser gente. Na prática o tutor se importa com a resposta rápida, não com quem digitou.</p></details>
       <details><summary>Como funciona o recall por ciclo?</summary><p>Cada pet tem o próprio intervalo entre banhos, medido no histórico dele, não uma régua igual para todos. Quando passa do ciclo, sai um convite com dois horários prontos para o tutor escolher.</p></details>
       <details><summary>Serve para barbearia ou salão?</summary><p>Serve. O motor é o mesmo para qualquer serviço com hora marcada e retorno previsível. Muda o vocabulário e a duração. Petshop é só por onde começamos.</p></details>
+      <details><summary>Quem faz o Agenda Cheia?</summary><p>Rodrigo Roque, de São Paulo. Trabalha com CRM, fidelização e relacionamento com cliente desde 2014. Passou onze anos em um atacado de moda no Brás que atende lojista, onde coordenou o programa de fidelidade que elevou o valor do cliente em 30% e a retenção em 25%. Hoje é gerente de CRM em um distribuidor nacional de suplementos, onde desenhou e opera um CRM e um bot de WhatsApp usados diariamente por mais de 190 pessoas. É tecnólogo em Gestão Comercial, especialista em Comunicação e Marketing e cursa pós-graduação em Marketing de Relacionamento e CRM na ESPM.</p></details>
       <details><summary>E se eu não gostar?</summary><p>São 30 dias de garantia. Você cancela sem multa e leva a base de tutores e pets em arquivo.</p></details>
     </div>
   </div>
